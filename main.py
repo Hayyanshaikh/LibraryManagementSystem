@@ -1,5 +1,6 @@
 from methods.add_new_book import add_new_book
 from methods.read_book import read_book
+from methods.issued_book import issued_book
 
 
 def menu():
@@ -17,7 +18,7 @@ choice = int(input("Enter your choice: "))
 if choice == 1:
   add_new_book()
 elif choice == 2:
-  print("issue book")
+  issued_book()
 elif choice == 3:
   print("return book")
 elif choice == 4:

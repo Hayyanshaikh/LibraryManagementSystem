@@ -20,7 +20,7 @@ def read_book():
     book = input("\nEnter the book name: ").strip()
 
     # Case-insensitive book search
-    if book in books:
+    if f"{book}.html" in books:
       file_path = os.path.abspath(f"books/{book}.html")
       print("📖 Opening the book...")
       time.sleep(1)
